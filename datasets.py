@@ -38,6 +38,7 @@ class MVTec(Dataset):
         self.batchsz = batchsz  # batch of set, not batch of imgs
         self.k_shot = k_shot  # ok-sht
         self.k_query = k_query  # for evaluation
+        self.n_way = 1
         self.setsz = self.n_way * self.k_shot  # num of samples per set
         self.querysz = self.n_way * self.k_query  # number of samples per set for evaluation
         self.resize = resize  # resize to
